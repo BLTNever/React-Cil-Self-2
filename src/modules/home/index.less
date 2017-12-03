@@ -1,0 +1,220 @@
+.weekly {
+    color: #191F25;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    // bottom: 1rem;
+    bottom: 0;
+    padding-bottom: 0.32rem;
+    .weekly-con {
+        margin-top: 96px;
+        overflow: hidden;
+    }
+
+    .breadcrumb {
+        text-align: left;
+        font-size: 34px;
+        width: 100%;
+        color: #3296FA;
+        padding: 0 32px;
+        height: 96px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #fff;
+        margin: 16px 0;
+        .crumb {
+            height: 0.44rem;
+            line-height: 0.44rem;
+            float: left;
+        }
+        .crumb:last-child {
+            color: #A3A4A6;
+        }
+        .am-icon.am-icon-right {
+            vertical-align: top;
+            color: #A3A4A6;
+        }
+    }
+
+    .personnel-statistics {
+        background-color: #fff;
+    }
+
+    .tabs-pane {
+        margin-top: 29px;
+        background-color: #fff;
+        font-size: 30px;
+        .tabs {
+            height: 96px;
+            line-height: 96px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            .tabs-item {
+                box-sizing: border-box;
+                width: 50%;
+                text-align: center;
+                border-bottom: 1px solid rgb(227,228,228);
+                &.active {
+                    color: #3296FA;
+                }
+            }
+            .bottom-line {
+                width: 50%;
+                height:4px;
+                background-color: #3296FA; 
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: left 0.3s cubic-bezier(0.35, 0, 0.25, 1),;
+                will-change:  left;
+            }
+        }
+        .pane {
+            text-align: left;
+            &>div {
+                overflow: hidden;
+                padding-bottom: 32px;
+            }
+            .data-null {
+                text-align: center;
+                font-size: 34px;
+                color: rgba(25,31,37,0.28);
+                padding: 42px 0 64px;
+                display: block;
+                box-sizing: border-box;
+                border-bottom: 1px solid #E3E4E4;
+                margin: 0 32px;
+            }
+        }
+    }
+
+    .dept-contrast {
+        margin-top: 32px;
+        background-color: #fff;
+        .contrast {
+            text-align: left;
+            overflow: hidden;
+            .contrast-header {
+                font-size: 26px;
+                height: 88px;
+                line-height: 88px;
+                box-shadow: 0 1px 0 0 #F6F6F6, 0 -1px 0 0 rgba(25,31,37,0.08);
+                display: flex;
+                justify-content: space-between;
+                span {
+                    display: inline-block;
+                    text-overflow:ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    box-sizing: border-box;
+                }
+                .left-wrap {
+                    // width: 60%;
+                }
+                .right-wrap {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 32px;
+                    box-sizing: border-box;
+                }
+                .dept {
+                    // width: 444px;
+                    text-indent: 80px;
+                }
+                .entry {
+                    // width: 169px;
+                    text-align: left;
+                }
+                .dismission {
+                    text-align: right;
+                   
+                    // float: right;
+                }
+            }
+            
+            .contrast-con {
+                .compare {
+                    height: 88px;
+                    width: 100%;
+                    color: #191F25;
+                    font-size: 30px;
+                    box-shadow: 0 1px 0 0 #F6F6F6;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span {
+                        display: inline-block;
+                        text-overflow:ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        box-sizing: border-box;
+                   }
+                   .left-wrap {
+                    //    width: 60%;
+                   }
+                   .right-wrap {
+                       width: 40%;
+                       padding-right: 32px;
+                       display: flex;
+                       justify-content: space-between;
+                       align-items: center;
+                   }
+                    .serial-num {
+                        width: 80px;
+                        text-align: center;
+                        font-size: 26px;
+                        color: rgba(25, 31, 37, 0.56);
+                    }
+                    .dept-name {
+                        width: 210px;
+                    }
+                    .entry-num {
+                        width: 80px;
+                        font-size: 26px;                        
+                    }
+                    .contrast-line {
+                        width: 136px;
+                        height: 6px;
+                        border-radius: 8px;
+                        background-color: #00D4D4;
+                        i {
+                            display: block;
+                            height: 6px;
+                            background-color: #007DFA;
+                        }
+                    }
+                    .dismission-num {
+                        width: 80px;
+                        font-size: 26px;
+                        text-align: right;
+                        // margin-right: 32px;
+                       
+                    }
+                }
+            }
+
+            .data-null {
+                text-align: center;
+                font-size: 34px;
+                color: rgba(25,31,37,0.28);
+                margin: 87px auto 108px;
+            }
+        }
+    }
+
+    .chart {
+        display: flex;
+        justify-content: center;
+        // padding-bottom: 60px;
+    }
+}

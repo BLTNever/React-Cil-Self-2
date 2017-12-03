@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script>
+        !function (e) {
+            function t(a) {
+                if (i[a]) return i[a].exports; 
+                var n = i[a] = { exports: {}, id: a, loaded: !1 }; 
+                return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+            } 
+            var i = {}; 
+            return t.m = e, t.c = i, t.p = "", t(0)
+        }([function (e, t) {
+            "use strict"; 
+            Object.defineProperty(t, "__esModule", { value: !0 });
+            var i = window;
+            t["default"] = i.flex = function (e, t) {
+                var a = e || 100, 
+                    n = t || 1, 
+                    r = i.document, 
+                    o = navigator.userAgent, 
+                    d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i), 
+                    l = o.match(/U3\/((\d+|\.){5,})/i), c = l && parseInt(l[1].split(".").join(""), 10) >= 80, 
+                    p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi), 
+                    s = i.devicePixelRatio || 1; 
+                    p || d && d[1] > 534 || c || (s = 1); var u = 1 / s, 
+                    m = r.querySelector('meta[name="viewport"]');
+                    m || (m = r.createElement("meta"), 
+                    m.setAttribute("name", "viewport"), 
+                    r.head.appendChild(m)), 
+                    m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), 
+                    r.documentElement.style.fontSize = a / 2 * s * n + "px"
+            }, e.exports = t["default"]
+        }]);
+        flex(100, 1);
+    </script>
+
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no"> -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="data-spm" content="a3140.7832593">
+    <link rel="stylesheet" href="//localhost:8989/index.css" />
+    <!-- <link rel="stylesheet" href="//localhost:8989/common.css" /> -->
+</head>
+
+<body>
+    <div id="app">
+        <!-- <svg class="triangle-svg" viewBox="0 0 140 141">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polygon class="triangle-polygon" points="70 6 136 138 4 138"></polygon>
+            </g>
+        </svg> -->
+    </div>
+
+    <script src="https://g.alicdn.com/dingding/libs/0.0.2??react/react.min.js,react/react-dom.min.js,redux/redux.min.js,react-redux/react-redux.min.js,react-router/ReactRouter.min.js,react-router-redux/ReactRouterRedux.min.js,react-thunk/redux-thunk.min.js,zepto/zepto.min.js"></script>
+<!-- 
+    <script src="https://cdn.bootcss.com/react/15.6.1/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.6.0/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/redux/3.7.2/redux.min.js"></script>
+    <script src="https://cdn.bootcss.com/react-redux/5.0.6/react-redux.min.js"></script>
+    <script src="https://cdn.bootcss.com/react-router/4.2.0/react-router.min.js"></script>
+    <script src="https://cdn.bootcss.com/react-router-redux/4.0.8/ReactRouterRedux.min.js"></script>
+    <script src="https://cdn.bootcss.com/redux-thunk/2.2.0/redux-thunk.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script> -->
+
+    <script src="//localhost:8989/common.js"></script>
+    <script src="//localhost:8989/index.js"></script>
+</body>
+
+</html>
