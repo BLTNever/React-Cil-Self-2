@@ -1,6 +1,6 @@
 {
     "name": "h5-m",
-    "version": "0.5.6",
+    "version": "0.0.1",
     "description": "React",
     "license": "MIT",
     "entry": {
@@ -11,18 +11,15 @@
             "antd-mobile"
         ]
     },
-    "theme": "./src/theme/variable.js",
     "engines": {
         "node": "6.x"
     },
     "dependencies": {
-        "ant-mobile": "^0.0.0",
         "antd": "^2.13.9",
         "antd-mobile": "^1.4.0",
         "autobind-decorator": "^2.1.0",
         "classnames": "2.2.5",
         "fastclick": "^1.0.6",
-        "g2-mobile": "^2.2.0-beta.3",
         "isomorphic-fetch": "^2.2.1",
         "js-cookie": "^2.1.4",
         "lrz": "^4.9.40",

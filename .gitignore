@@ -1,21 +1,4 @@
-node_modules
-out
-.vscode
-
-# karma
-coverage
-# Users Environment Variables
-.lock-wscript
-
-.package/
-.tmp/
-*.DS_Store
-.DS_Store
-
-*.map
-.map
-
-.idea
+node_modules/
 
 npm-debug.log
 

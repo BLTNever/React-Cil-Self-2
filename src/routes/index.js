@@ -23,7 +23,7 @@ module.exports = function Routes() {
             history={history}>
             <Route path="/" component={require("../modules/home/")} />
             <Route path="/home" component={require("../modules/home/")} />
-            <Route path="default" component={require("../modules/notFound/")} />
+            {/* <Route path="default" component={require("../modules/default/")} /> */}
             <Route path="*" component={require("../modules/notFound/")} />
         </Router>
     );
