@@ -4,7 +4,7 @@
 import { ListView } from "antd-mobile";
 class PerfectListView extends ListView {
     constructor(props) {
-        super();
+        super(props);
         this.params = {
             x: 0,
             y: 0,

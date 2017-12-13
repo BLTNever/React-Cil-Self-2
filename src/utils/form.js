@@ -12,7 +12,7 @@ import { set, get } from "./db";
 const getCacheKey = () => `cache:${get("uid")}:V2.0:${get("corpId")}`;
 module.exports = {
     validator(rule, value, cb, _cache) {
-        let message = "";
+        const message = "";
 
         // 草稿功能（前端缓存）
 
