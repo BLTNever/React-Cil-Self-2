@@ -235,6 +235,23 @@ function cFetch(url, options) {
             });
 }
 
+import fetch from "isomorphic-fetch";
+
+function dbFetch(url) {
+    fetch(url)
+        .then(check401)
+        .then(check404)
+        .then(checkStatus)
+        .then(res => {
+            if (res.result && options.meta && options.meta.poineer) {
+                set(url, res);
+            }
+            return res;
+        })
+        .catch(err => {
+            console.log(err)
+        });
+}
 //catch all the unhandled exception
 // window.addEventListener("unhandledrejection", function(err) {
 //   const ex = err.reason;

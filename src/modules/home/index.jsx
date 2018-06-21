@@ -27,6 +27,7 @@ const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(
         {
             dispatch,
+            data,
         },
         dispatch
     )
@@ -47,18 +48,24 @@ export default class Home extends Component {
         this.state = {
           
         };
+        Object.assign(this, {
+            getList: this.getList.bind(this),
+        })
     }
 
     componentWillMount() {
        
     }
 
+    getList() {
+
+    }
 
     render() {
         
         return (
             <div>
-                <h1>Home Page</h1>
+                <h1>{this.getList}</h1>
                 <Child data={'Home'} />
             </div>
         );
