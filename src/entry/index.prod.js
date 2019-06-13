@@ -10,9 +10,7 @@ const store = configureStore();
 ReactDOM.render(
 	<div>
 		<Provider store={store}>
-			<div>
 				<Routes />
-			</div>
 		</Provider>
 	</div>,
 	document.getElementById('app')
